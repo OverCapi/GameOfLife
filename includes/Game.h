@@ -10,7 +10,7 @@ struct Game
 	int	state;
 	int nb_gen;
 	int	tick;
-	int	want_update;
+	int	speed_index;
 	Map	current_map;
 	Map	new_map;
 };

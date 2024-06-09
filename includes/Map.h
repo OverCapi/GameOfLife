@@ -12,5 +12,6 @@ typedef struct
 void	init_map(Map *map);
 void	create_new_map(Map current, Map *new_map);
 void	draw_map(Map map);
+void	add_square(Map *map, int x, int y);
 
 #endif

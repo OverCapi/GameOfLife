@@ -94,3 +94,8 @@ void	init_map(Map *map)
 		i++;
 	}
 }
+
+void	add_square(Map	*map, int x, int y)
+{
+	map->map[x][y] = (map->map[x][y] + 1) % 2;
+}
