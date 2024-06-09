@@ -1,7 +1,6 @@
 #include "../includes/Game.h"
 
-int	main(void)
+int main(void)
 {
-
-	return (0);
+	game_loop();
 }
