@@ -36,7 +36,7 @@ void	handleEvents(void)
 	}
 	if (IsKeyPressed(KEY_UP))
 		game.speed_index = (game.speed_index + 1) % NB_SPEED;
-	else if (IsKeyPressed(KEY_DOWN))
+	if (IsKeyPressed(KEY_DOWN))
 	{
 		game.speed_index--;
 		if (game.speed_index < 0)
@@ -49,6 +49,10 @@ void	handleEvents(void)
 			x = GetMouseX() / SQUARE_SIZE;
 			y = GetMouseY() / SQUARE_SIZE;
 			add_square(&game.current_map, x, y);
+		}
+		if (IsKeyPressed(KEY_C))
+		{
+			init_map(&game.current_map);
 		}
 	}
 }
